@@ -92,6 +92,17 @@ AUTHENTICATION_BACKENDS = [
 
 WSGI_APPLICATION = 'order360.wsgi.application'
 
+SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -122,7 +133,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-SITE_ID = 1
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
