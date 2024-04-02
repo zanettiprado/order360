@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-d8la6+zppj_r)7!6k8!cdhcdy+khvt)x&3quz(_r9$4m!0*fh7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '8000-zanettiprado-order360-offr651haud.ws-eu110.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = [ '8000-zanettiprado-order360-offr651haud.ws-eu110.gitpod.io','.herokuapp.com', '127.0.0.1']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-zanettiprado-order360-offr651haud.ws-eu110.gitpod.io',
@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     #apps
     'home',
+    'authentication',
 ]
 
 MIDDLEWARE = [
